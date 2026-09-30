@@ -17,7 +17,7 @@ const startMillis = startDate.getTime();
 let scaleFactor = 1.0;
 
 const canvas = document.querySelector('canvas.threejs');
-const linesData = await UTI.loadFile('./src/data_25apr2025.txt');
+const linesData = await UTI.loadFile('.myPlanets/src/data_25apr2025.txt');
 const scene = UTI.create_scene();
 const camera = UTI.initializeCamera();
 const controls = UTI.initializeControls(camera, canvas);
