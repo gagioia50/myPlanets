@@ -1,3 +1,3 @@
 export default {
-    base: process.env.NODE_ENV === 'production' ? '/orbit/' : '/'
+    base: process.env.NODE_ENV === 'production' ? '/myPlanets/' : '/'
 }
