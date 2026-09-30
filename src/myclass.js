@@ -110,8 +110,9 @@ class Planet {
 } // end of class
 
 class Body {
-  constructor(cod, x, y, z, vx, vy, vz, mass, radius, color, name) {
+  constructor(cod, name, x, y, z, vx, vy, vz, mass, radius, color) {
     this.cod = cod
+    this.name = name
     this.x = x
     this.y = y
     this.z = z
@@ -121,7 +122,6 @@ class Body {
     this.mass = mass
     this.radius = radius
     this.color = color
-    this.name = name
     this.y_old = 0
     this.prev_t = 0
     this.t = 0
