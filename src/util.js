@@ -105,8 +105,10 @@ export function createBodies(lines) {
         if (items[0] == '0') {
             continue
         }
-        let body = new Body(items[0], items[1], Number(items[2]), Number(items[3]), Number(items[4]), 
-                    Number(items[5]), Number(items[6]), Number(items[7]), Number(items[8]), Number(items[9]), items[10]);
+        let cod = items[0]; let name = items[1]; let x = Number(items[2]); let y = Number(items[3]); let z = Number(items[4]);
+        let vx = Number(items[5]); let vy = Number(items[6]); let vz = Number(items[7]); let mass = Number(items[8]); 
+        let radius = Number(items[9]); let color = items[10];
+        let body = new Body(cod, name, x, y, z, vx, vy, vz, mass, radius, color);
         bodies.push(body);
     }
     return bodies;
