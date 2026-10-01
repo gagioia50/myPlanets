@@ -5,8 +5,8 @@ class Planet {
   static DT = 86400
   
   constructor(){
-    this.proCheckDate = '18/04/2500'
-    this.checkDateString = '18/04/2026'
+    this.proCheckDate = '25/04/3000'
+    this.checkDateString = '25/04/2026'
     this.proFdt = 0.1
     this.fdt = 0.1
   }
