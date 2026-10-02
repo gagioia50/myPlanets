@@ -79,8 +79,8 @@ export function createSunPoint() {
 }
 
 export function createTrails(bodies, scene) {
-    var myMeshLines = []
-    for (var i = 0; i < bodies.length; i++) {
+    let myMeshLines = []
+    for (let i = 0; i < bodies.length; i++) {
         const lineGeometry = new MeshLineGeometry();
         const lineMaterial = new MeshLineMaterial({
             color: new THREE.Color(bodies[i].color),
@@ -115,8 +115,8 @@ export function createBodies(lines) {
 }
 
 export function createMeshes(bodies, scene) {
-    var myMeshes = []
-    for (var i = 0; i < bodies.length; i++) {
+    let myMeshes = []
+    for (let i = 0; i < bodies.length; i++) {
         const geo = new THREE.SphereGeometry(bodies[i].radius, 32, 32);
         const mat = new THREE.MeshStandardMaterial({color: new THREE.Color(bodies[i].color)});
         const mesh = new THREE.Mesh(geo, mat);
@@ -130,9 +130,9 @@ export function createMeshes(bodies, scene) {
 }
 
 function createCurrentDateString(date) {
-  var d = date.getDate();
-  var m = date.getMonth() + 1; //Month from 0 to 11
-  var y = date.getFullYear();
+  let d = ('0' + date.getDate()).slice(-2);
+  let m = ('0' + (date.getMonth() + 1)).slice(-2);
+  let y = date.getFullYear();
   return d+"/"+m+"/"+y;
 }
 
